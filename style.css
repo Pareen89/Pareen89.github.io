@@ -36,8 +36,8 @@ li{
     margin:20px 0 10px 0;
 }
 .btn:hover{
-    background: #eaeaea;
-    color: #333;
+    color: #eaeaea;
+    background: #333;
 }
 a:visited{
     color:black;
