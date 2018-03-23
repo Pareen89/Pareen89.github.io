@@ -36,8 +36,8 @@ li{
     margin:20px 0 10px 0;
 }
 .btn:hover{
-    color: #eaeaea;
-    background: #333;
+    background: #eaeaea;
+    color: #333;
 }
 a:visited{
     color:black;
@@ -86,7 +86,6 @@ a:link{
 }
 .content-wrap{
     display: flex;
-    height: 200px;
     
 }
 .content-wrap p{
@@ -99,6 +98,7 @@ a:link{
 
 .project{
     padding: 20px 0;
+    height: auto;
 }
 .project-two{
     background: #fff;
@@ -145,7 +145,7 @@ a:link{
     /* Section A: Intro */
     .content-wrap{
         padding-top: 100px;
-        height: 300px;
+        min-height: 300px;
     }
     
 
