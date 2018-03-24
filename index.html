@@ -30,7 +30,7 @@
         <!-- Section A: Intro-->
         <section id="section-a">
             <div class="content-wrap">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam perspiciatis aperiam optio praesentium suscipit molestiae eligendi, fuga quisquam facere.</p>
+                <p id="write"></p>
                 
             </div>
         </section>
@@ -47,19 +47,21 @@
                             <h3 class="project-role">My Role</h3>
                             <p class="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quidem earum eius, asperiores quis aspernatur et ab beatae in, deleniti consequatur ipsam fugit ut animi doloribus inventore architecto sapiente qui rerum numquam a perspiciatis. Est tenetur illo facere aut culpa cumque animi tempore accusamus similique minima voluptatum placeat eaque voluptate delectus rerum fugit consectetur, ipsam, molestiae magni dolorum? Expedita natus magni fugit qui ut iste dolor quos, at temporibus numquam, perferendis libero ipsam et consectetur ea, soluta distinctio neque facere. Delectus mollitia sequi debitis dolorum nihil cumque neque eum dolorem? Nisi sunt culpa voluptates quasi facilis neque. Omnis, eaque vitae?</p>
                             <button class="btn">View Website</button>  
+                            <button class="btn">View Source Code</button>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="project project-two">
                         <h2 class="project-title">Project 2</h2>
-                        <img src="project1.png" alt="project 2" class="img">
+                        <img src="project2.png" alt="project 2" class="img">
                         <div class="project-content">                           
                             <h3 class="project-brief">Project Brief</h3>
                             <p class="project-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste libero totam aperiam labore non possimus iusto nesciunt. Architecto ad dolorum non vitae cupiditate voluptatum voluptatem dolores totam provident, eum ipsum impedit quos, quasi, earum repellat! Amet nostrum accusamus eum officia, ratione dolorum quisquam saepe, a expedita, temporibus nisi modi.</p>
                             <h3 class="project-role">My Role</h3>
                             <p class="project-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste vero architecto corporis optio nam nulla vel amet voluptatum nisi iusto error deserunt, eos reiciendis accusantium odit vitae mollitia eligendi. Eos placeat aliquam vel hic ut quam mollitia illo ab delectus? Culpa veritatis, impedit ratione quibusdam fugit itaque officia magni numquam.</p>
                             <button class="btn">View Website</button>
+                            <button class="btn">View Source Code</button>
                         </div>
                     </div>
                 </li>
@@ -67,5 +69,23 @@
 
         </section>
     </main>
+
+    <!-- Javascript -->
+    <script>
+        var i =0;
+        var text = "My passion is learning and improving. Coding provides me with the perfect vehicle for that expression of myself. There is always so much more to learn, and so many things to improve upon. I enjoy finding solutions to problems, learning new skills, and improving current ones. I love to build things."
+        var speed =70;
+
+        function typeWriter() {
+            if (i < text.length){
+                document.getElementById("write").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }   
+        }
+        window.onload = typeWriter;
+
+       
+    </script>
 </body>
 </html>
