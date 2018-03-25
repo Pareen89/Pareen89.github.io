@@ -30,8 +30,7 @@
         <!-- Section A: Intro-->
         <section id="section-a">
             <div class="content-wrap">
-                <p id="write"></p>
-                
+                <p id="write"></p>                
             </div>
         </section>
         <!-- Section B: Projects -->
@@ -69,13 +68,11 @@
 
         </section>
     </main>
-
     <!-- Javascript -->
     <script>
         var i =0;
         var text = "PAREEN PATEL"
         var speed =120;
-
         function typeWriter() {
             if (i < text.length){
                 document.getElementById("write").innerHTML += text.charAt(i);
@@ -83,9 +80,7 @@
                 setTimeout(typeWriter, speed);
             }   
         }
-        window.onload = typeWriter;
-
-       
+        window.onload = typeWriter;      
     </script>
 </body>
 </html>
