@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pareen Patel | Front End Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    
 </head>
 <body>
     <!-- Header Area -->
@@ -36,6 +36,20 @@
         <!-- Section B: Projects -->
         <section class="section-b grid">
             <ul>
+                <li>
+                    <div class="project project-two">
+                        <h2 class="project-title">Fresh Delivery</h2>
+                        <img src="project4.png" alt="project 2" class="img">
+                        <div class="project-content">                 
+                            <h3 class="project-brief">Project Brief</h3>
+                            <p class="project-paragraph">Create a single page responsive website using HTML, CSS, and JavaScript. Also included a smooth scroll using vanilla JavaScript.</p>
+                            <h3 class="project-role">My Role</h3>
+                            <p class="project-paragraph">Designed and developed using HTML, CSS, and JavaScript.</p>
+                            <a href="https://pareen89.github.io/Food/"><button class="btn">View Website</button></a>
+                            <a href="https://github.com/Pareen89/Food"><button class="btn">View Source Code</button></a>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <div class="project project-one">
                         <h2 class="project-title">Meditation Countdown</h2>
@@ -69,21 +83,6 @@
             </ul>
         </section>
     </main>
-    <!-- Javascript -->
-    
-    <script>
-        var i =0;
-        var text = "Hi! I am Pareen. I build websites. I specialize in front end developement(HTML5, CSS3, JavaScript)."
-        var speed =80;
-        function typeWriter() {
-            if (i < text.length){
-                document.getElementById("write").innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }   
-        }
-        window.onload = typeWriter;      
-    </script>
-    
+    <script src="js/main.js"></script>    
 </body>
 </html>
