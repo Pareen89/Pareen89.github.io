@@ -414,10 +414,16 @@ strong {
   html {
     font-size: 40.5%;
   }
+  body {
+        width: 100vw;
+    }
 }
 
 @media only screen and (max-width: 458px) {
   html {
     font-size: 30.5%;
   }
+  body {
+        width: 100vw;
+    }
 }
