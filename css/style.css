@@ -323,7 +323,7 @@ strong {
 }
 
 .porject_img {
-  width: 33vw;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border: 1rem solid #000;
