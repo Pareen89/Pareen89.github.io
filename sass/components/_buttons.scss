@@ -1,0 +1,168 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    color: color(pfc);
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    text-align: center;
+    border: 0.2rem solid color(pfc);
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0.5rem color(shadow);
+    transition: all 0.3s ease-out;
+  }
+  &:hover {
+    background-color: color(sfc);
+    border-color: color(sfc);
+    transform: translateY(-0.3rem);
+    transition: all 0.3s;
+    .arrow {
+      transform: rotate(90deg);
+      transition: all 0.3s ease-out;
+    }
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translate(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-out;
+  }
+  &--animation {
+    animation: moveInBottom 0.5s ease-out 1.25s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.card__cta-btn {
+  &,
+  &:link,
+  &:visited {
+    color: color(pfc);
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    text-align: center;
+    border: 0.2rem solid color(pfc);
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0.5rem color(shadow);
+    transition: all 0.3s ease-out;
+  }
+  &:hover {
+    background-color: color(sfc);
+    border-color: color(sfc);
+    transform: translateY(-0.3rem);
+    transition: all 0.3s;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translate(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-out;
+  }
+  &--animation {
+    animation: moveInBottom 0.5s ease-out 1.25s;
+    animation-fill-mode: backwards;
+  }
+  @include respond(tab-port) {
+    &,
+    &:link,
+    &:visited {
+      color: color(sfc);
+      text-decoration: none;
+      padding: 1.5rem 3rem;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      box-shadow: none;
+      transition: none;
+      box-shadow: 0 1.5rem 2rem rgba(color(shadow), 0.25);
+    }
+    &:hover {
+      background-color: color(pfc);
+      border-color: none;
+      transform: none;
+      transition: all 0.3s;
+      color: color(sfc);
+    }
+    &:active,
+    &:focus {
+      outline: none;
+      transform: none;
+      box-shadow: none;
+      transition: all 0.3s ease-out;
+    }
+    &--animation {
+      animation: none;
+      animation-fill-mode: none;
+    }
+  }
+}
+
+.project_btn_text {
+  &,
+  &:link,
+  &:visited {
+    color: color(sfc);
+    box-shadow: 0 1.5rem 4rem rgba(color(shadow), 0.25);
+    transition: all 0.3s ease-out;
+  }
+  &:hover {
+    color: color(pfc);
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translate(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-out;
+  }
+}
+
+.contact_btn_text {
+  &,
+  &:link,
+  &:visited {
+    font-family: inherit;
+    font-size: 2rem;
+    background-color: color(pfc);
+    color: color(sfc);
+    box-shadow: 0 1.5rem 4rem rgba(color(shadow), 0.25);
+    transition: all 0.3s ease-out;
+  }
+  &:hover {
+    color: color(pfc);
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translate(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-out;
+  }
+}
+
+.popup_btn_text {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    color: color(sfc);
+    box-shadow: 0 1.5rem 4rem rgba(color(shadow), 0.25);
+    transition: all 0.3s ease-out;
+  }
+  &:hover {
+    background-color: color(sfc);
+    color: color(pfc);
+    border-color: color(sfc);
+    transform: translateY(-0.3rem);
+    transition: all 0.3s;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-out;
+  }
+}

@@ -1,0 +1,195 @@
+#fourth {
+    box-sizing: border-box;
+}
+
+.card {
+    perspective: 150rem;
+    width: 30rem;
+    position: relative;
+    height: 40rem;
+    margin-bottom: 8rem;
+    cursor: pointer;
+    &__side {
+        height: 40rem;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 0.3rem;
+        box-shadow: 0 1.5rem 4rem rgba(color(shadow), 0.25);
+        overflow: hidden;
+        &--front {
+            background-color: color(pfc);
+        }
+        &--back {
+            transform: rotateY(180deg);
+            &-1 {
+                background-image: linear-gradient( to right bottom, color(gradient1), color(gradient2));
+            }
+            &-2 {
+                background-image: linear-gradient( to right bottom, color(gradient1), color(gradient2));
+            }
+            &-3 {
+                background-image: linear-gradient( to right bottom, color(gradient1), color(gradient2));
+            }
+            &-4 {
+                background-image: linear-gradient( to right bottom, color(gradient1), color(gradient2));
+            }
+        }
+    }
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    } //Front Side Styling
+    &__picture {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-blend-mode: screen;
+        background-position: center center;
+        height: 14.5rem;
+        margin-bottom: 2rem;
+        &--1 {
+            background-image: url("../img/portfolio2.png");
+        }
+        &--2 {
+            background-image: url("../img/game1.png");
+        }
+        &--3 {
+            background-image: url("../img/warriors.png");
+        }
+        &--4 {
+            background-image: url("../img/meditation.png");
+        }
+        &--5 {
+            background-image: url("../img/dev.png");
+        }
+        &--6 {
+            background-image: url("../img/hangman.png");
+        }
+        &--7 {
+            background-image: url("../img/food.png");
+        }
+        &--8 {
+            background-image: url("../img/outdoor.png");
+        }
+        &--9 {
+            background-image: url("../img/todo.png");
+        }
+        &--10 {
+            background-image: url("../img/portfolio1.png");
+        }
+        &--11 {
+            background-image: url("../img/bbq.png");
+        }
+    }
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: color(sfc);
+    }
+    &__details {
+        padding: 3rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                &:not(:last-child) {
+                    border-bottom: 0.1rem solid color(sfc);
+                }
+            }
+        }
+    } //Back Side Styling
+    &__cta {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include respond(tab-port) {
+        height: auto;
+        margin-bottom: 8rem;
+        cursor: auto;
+        &__side {
+            height: auto;
+            position: relative;
+            border-radius: 0;
+            box-shadow: 0 1.5rem 2rem rgba(color(shadow), 0.25);
+            &--front {
+                background-color: white;
+            }
+            &--back {
+                transform: rotateY(0);
+                &-1 {
+                    background-color: black;
+                }
+                &-2 {
+                    background-color: black;
+                }
+                &-3 {
+                    background-color: black;
+                }
+                &-4 {
+                    background-color: black;
+                }
+            }
+        }
+        &:hover &__side--front {
+            transform: rotateY(0);
+        } //Back Side Styling
+        &__cta {
+            text-align: center;
+            position: relative;
+            top: 0%;
+            left: 0%;
+            transform: translate(0);
+            width: 100%;
+            height: 4rem;
+            background-color: white;
+        }
+    }
+}
+
+// Project.html code below
+.category_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(10rem, auto);
+    &-item {
+        padding: 0.5rem 2.5rem;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: all 0.3s;
+        &:hover {
+            background-color: rgb(23, 112, 184);
+            color: #fff;
+        }
+    }
+}
+
+.hide {
+    display: none;
+    position: absolute;
+    padding: 0; // transform: scale(0);
+    // transition: all 0.55s ease-in-out;
+}
+
+.not_active {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}

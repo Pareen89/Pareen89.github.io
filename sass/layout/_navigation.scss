@@ -1,0 +1,30 @@
+.nav {
+    height: 5rem;
+    background-color: color(nb);
+    @include container(1, 4);
+    object-fit: cover;
+    z-index: 2;
+    border-bottom: 0.2rem solid color(sfc);
+    &__menu {
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5rem;
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: color(pfc);
+            &:hover {
+                color: color(sfc);
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+// Used in javascript for nav bar to stick to top when scrolling;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
