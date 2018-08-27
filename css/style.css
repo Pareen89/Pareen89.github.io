@@ -663,27 +663,27 @@ textarea {
     height: 14.5rem;
     margin-bottom: 2rem; }
     .card__picture--1 {
-      background-image: url("../img/portfolio2.png"); }
+      background-image: url(../img/portfolio2.png); }
     .card__picture--2 {
       background-image: url("../img/game1.png"); }
     .card__picture--3 {
-      background-image: url("../img/warriors.png"); }
+      background-image: url("/img/warriors.png"); }
     .card__picture--4 {
-      background-image: url("../img/meditation.png"); }
+      background-image: url("/img/meditation.png"); }
     .card__picture--5 {
-      background-image: url("../img/dev.png"); }
+      background-image: url("/img/dev.png"); }
     .card__picture--6 {
-      background-image: url("../img/hangman.png"); }
+      background-image: url("/img/hangman.png"); }
     .card__picture--7 {
-      background-image: url("../img/food.png"); }
+      background-image: url("/img/food.png"); }
     .card__picture--8 {
-      background-image: url("../img/outdoor.png"); }
+      background-image: url("/img/outdoor.png"); }
     .card__picture--9 {
-      background-image: url("../img/todo.png"); }
+      background-image: url("/img/todo.png"); }
     .card__picture--10 {
-      background-image: url("../img/portfolio1.png"); }
+      background-image: url("/img/portfolio1.png"); }
     .card__picture--11 {
-      background-image: url("../img/bbq.png"); }
+      background-image: url("/img/bbq.png"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 700;
