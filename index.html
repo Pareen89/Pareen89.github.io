@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pareen Patel | Front End Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="img/bg.jpg" as="image">
     <link rel="stylesheet" href="css/icon_fonts.css">
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:700,800" rel="stylesheet">
@@ -297,21 +298,23 @@
             <div class="contactMe__container">
                 <div class="contactMe contactMe__container-item">
                     <div class="contactMe__form contactMe__container">
-                        <form action="#" class="form">
+                        <input type="hidden" name="_next" value="https://pareen89.github.io/" />
+                        <form action="https://formspree.io/pareenpatel89@gmail.com" method="POST" class="form">
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" name="name" required>
                                 <label for="name" class="form__label">Full Name</label>
                             </div>
                             <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                <input type="email" class="form__input" placeholder="Email address" id="email" name="email" required>
                                 <label for="email" class="form__label">Email address</label>
                             </div>
                             <div class="form__group">
-                                <textarea id="message" class="form__input" name="Message" placeholder="Your message..." style="height:20rem" required></textarea>
+                                <textarea id="message" class="form__input" name="Message" placeholder="Your message..." style="height:20rem" name="textarea"
+                                    required></textarea>
                                 <label for="message" class="form__label"></label>
                             </div>
                             <div class="center_text">
-                                <input class="btn contact_btn_text margin_top_small" type="submit" value="Submit">
+                                <input class="btn contact_btn_text margin_top_small" type="submit" value="Submit" name="submit">
                             </div>
                         </form>
                     </div>
