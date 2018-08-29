@@ -624,7 +624,7 @@ html {
       font-size: 50%; } }
   @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 30%; } }
+      font-size: 25%; } }
 
 ::selection {
   background-color: #000;
@@ -891,7 +891,7 @@ body {
       width: 100%; } }
   @media only screen and (max-width: 37.5em) {
     .box {
-      width: 50%; } }
+      width: 60%; } }
   .box__icon {
     font-size: 6rem;
     margin-top: 3rem;
