@@ -9,6 +9,7 @@
     height: 40rem;
     margin-bottom: 8rem;
     cursor: pointer;
+
     &__side {
         height: 40rem;
         transition: all 0.8s ease;
@@ -16,35 +17,48 @@
         top: 0;
         left: 0;
         width: 100%;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: 0.3rem;
         box-shadow: 0 1.5rem 4rem rgba(color(shadow), 0.25);
         overflow: hidden;
+
         &--front {
             background-color: color(pfc);
         }
+
         &--back {
             transform: rotateY(180deg);
+
             &-1 {
-                background-image: linear-gradient( to right bottom, color(gradient1), color(gradient2));
+                background-image: linear-gradient(to right bottom, color(gradient1), color(gradient2));
             }
+
             &-2 {
-                background-image: linear-gradient( to right bottom, color(gradient1), color(gradient2));
+                background-image: linear-gradient(to right bottom, color(gradient1), color(gradient2));
             }
+
             &-3 {
-                background-image: linear-gradient( to right bottom, color(gradient1), color(gradient2));
+                background-image: linear-gradient(to right bottom, color(gradient1), color(gradient2));
             }
+
             &-4 {
-                background-image: linear-gradient( to right bottom, color(gradient1), color(gradient2));
+                background-image: linear-gradient(to right bottom, color(gradient1), color(gradient2));
             }
         }
     }
+
     &:hover &__side--front {
+        -webkit-transform: rotateY(-180deg);
         transform: rotateY(-180deg);
     }
+
     &:hover &__side--back {
+        -webkit-transform: rotateY(0deg);
         transform: rotateY(0deg);
-    } //Front Side Styling
+    }
+
+    //Front Side Styling
     &__picture {
         background-size: contain;
         background-repeat: no-repeat;
@@ -52,40 +66,52 @@
         background-position: center center;
         height: 14.5rem;
         margin-bottom: 2rem;
+
         &--1 {
-            background-image: url("../img/portfolio2.PNG");
+            background-image: url("../img/portfolio2.jpg");
         }
+
         &--2 {
-            background-image: url("../img/game1.PNG");
+            background-image: url("../img/game1.jpg");
         }
+
         &--3 {
-            background-image: url("../img/warriors.PNG");
+            background-image: url("../img/warriors.jpg");
         }
+
         &--4 {
-            background-image: url("../img/meditation.PNG");
+            background-image: url("../img/meditation.jpg");
         }
+
         &--5 {
-            background-image: url("../img/dev.PNG");
+            background-image: url("../img/dev.jpg");
         }
+
         &--6 {
-            background-image: url("../img/hangman.PNG");
+            background-image: url("../img/hangman.jpg");
         }
+
         &--7 {
-            background-image: url("../img/food.PNG");
+            background-image: url("../img/food.jpg");
         }
+
         &--8 {
-            background-image: url("../img/outdoor.PNG");
+            background-image: url("../img/outdoor.jpg");
         }
+
         &--9 {
-            background-image: url("../img/todo.PNG");
+            background-image: url("../img/hangman.jpg");
         }
+
         &--10 {
-            background-image: url("../img/portfolio1.PNG");
+            background-image: url("../img/portfolio1.jpg");
         }
+
         &--11 {
-            background-image: url("../img/bbq.PNG");
+            background-image: url("../img/bbq.jpg");
         }
     }
+
     &__heading {
         font-size: 2.8rem;
         font-weight: 700;
@@ -93,59 +119,80 @@
         text-align: center;
         color: color(sfc);
     }
+
     &__details {
         padding: 3rem;
+
         ul {
             list-style: none;
             width: 80%;
             margin: 0 auto;
+
             li {
                 text-align: center;
                 font-size: 1.5rem;
                 padding: 1rem;
+
                 &:not(:last-child) {
                     border-bottom: 0.1rem solid color(sfc);
                 }
             }
         }
-    } //Back Side Styling
+    }
+
+    //Back Side Styling
     &__cta {
         position: absolute;
         top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    @include respond(tab-port) {
+
+    // @include respond(tab-port)
+    @media only screen and (max-width: 56.25em),
+    only screen and (hover:none) {
         height: auto;
         margin-bottom: 8rem;
         cursor: auto;
+
         &__side {
             height: auto;
             position: relative;
             border-radius: 0;
             box-shadow: 0 1.5rem 2rem rgba(color(shadow), 0.25);
+
             &--front {
-                background-color: white;
+                background-color: color(pfc);
             }
+
             &--back {
+                -webkit-transform: rotateY(0);
                 transform: rotateY(0);
+
                 &-1 {
                     background-color: black;
                 }
+
                 &-2 {
                     background-color: black;
                 }
+
                 &-3 {
                     background-color: black;
                 }
+
                 &-4 {
                     background-color: black;
                 }
             }
         }
+
         &:hover &__side--front {
+            -webkit-transform: rotateY(0);
             transform: rotateY(0);
-        } //Back Side Styling
+        }
+
+        //Back Side Styling
         &__cta {
             text-align: center;
             position: relative;
@@ -154,7 +201,7 @@
             transform: translate(0);
             width: 100%;
             height: 4rem;
-            background-color: white;
+            background-color: color(pfc);
         }
     }
 }
@@ -164,6 +211,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(10rem, auto);
+
     &-item {
         padding: 0.5rem 2.5rem;
         justify-self: center;
@@ -173,6 +221,7 @@
         cursor: pointer;
         box-sizing: border-box;
         transition: all 0.3s;
+
         &:hover {
             background-color: rgb(23, 112, 184);
             color: #fff;

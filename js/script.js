@@ -1,9 +1,9 @@
-window.onscroll = function() {
+window.onscroll = function () {
   navSticky();
 };
 
-let navBar = document.getElementById("navbar");
-let sticky = navbar.offsetTop;
+var navBar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
 function navSticky() {
   if (window.pageYOffset >= sticky) {
@@ -13,26 +13,25 @@ function navSticky() {
   }
 }
 
-$(document).ready(function() {
-  $(".category_container-item").click(function() {
+$(document).ready(function () {
+  $(".category_container-item").click(function () {
     var category = $(this).attr("id");
 
     if (category == "all") {
       $(".card").addClass("hide");
-      setTimeout(function() {
+      setTimeout(function () {
         $(".card").removeClass("hide");
       }, 300);
     } else {
       $(".card").addClass("hide");
-      setTimeout(function() {
+      setTimeout(function () {
         $("." + category).removeClass("hide");
       }, 300);
     }
   });
-  $(".scroll").click(function(e) {
+  $(".scroll").click(function (e) {
     e.preventDefault();
-    $("body,html").animate(
-      {
+    $("body,html").animate({
         scrollTop: $(this.hash).offset().top
       },
       1000

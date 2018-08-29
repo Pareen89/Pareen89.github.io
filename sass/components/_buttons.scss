@@ -1,4 +1,5 @@
 .btn {
+
   &,
   &:link,
   &:visited {
@@ -11,16 +12,19 @@
     box-shadow: 0.5rem 0.5rem 0.5rem color(shadow);
     transition: all 0.3s ease-out;
   }
+
   &:hover {
     background-color: color(sfc);
     border-color: color(sfc);
     transform: translateY(-0.3rem);
     transition: all 0.3s;
+
     .arrow {
       transform: rotate(90deg);
       transition: all 0.3s ease-out;
     }
   }
+
   &:active,
   &:focus {
     outline: none;
@@ -28,6 +32,7 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-out;
   }
+
   &--animation {
     animation: moveInBottom 0.5s ease-out 1.25s;
     animation-fill-mode: backwards;
@@ -35,6 +40,7 @@
 }
 
 .card__cta-btn {
+
   &,
   &:link,
   &:visited {
@@ -47,12 +53,14 @@
     box-shadow: 0.5rem 0.5rem 0.5rem color(shadow);
     transition: all 0.3s ease-out;
   }
+
   &:hover {
     background-color: color(sfc);
     border-color: color(sfc);
     transform: translateY(-0.3rem);
     transition: all 0.3s;
   }
+
   &:active,
   &:focus {
     outline: none;
@@ -60,11 +68,15 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-out;
   }
+
   &--animation {
     animation: moveInBottom 0.5s ease-out 1.25s;
     animation-fill-mode: backwards;
   }
-  @include respond(tab-port) {
+
+  @media only screen and (max-width: 56.25em),
+  only screen and (hover:none) {
+
     &,
     &:link,
     &:visited {
@@ -78,6 +90,7 @@
       transition: none;
       box-shadow: 0 1.5rem 2rem rgba(color(shadow), 0.25);
     }
+
     &:hover {
       background-color: color(pfc);
       border-color: none;
@@ -85,6 +98,7 @@
       transition: all 0.3s;
       color: color(sfc);
     }
+
     &:active,
     &:focus {
       outline: none;
@@ -92,6 +106,7 @@
       box-shadow: none;
       transition: all 0.3s ease-out;
     }
+
     &--animation {
       animation: none;
       animation-fill-mode: none;
@@ -100,6 +115,7 @@
 }
 
 .project_btn_text {
+
   &,
   &:link,
   &:visited {
@@ -107,9 +123,11 @@
     box-shadow: 0 1.5rem 4rem rgba(color(shadow), 0.25);
     transition: all 0.3s ease-out;
   }
+
   &:hover {
     color: color(pfc);
   }
+
   &:active,
   &:focus {
     outline: none;
@@ -120,6 +138,7 @@
 }
 
 .contact_btn_text {
+
   &,
   &:link,
   &:visited {
@@ -130,9 +149,11 @@
     box-shadow: 0 1.5rem 4rem rgba(color(shadow), 0.25);
     transition: all 0.3s ease-out;
   }
+
   &:hover {
     color: color(pfc);
   }
+
   &:active,
   &:focus {
     outline: none;
@@ -143,6 +164,7 @@
 }
 
 .popup_btn_text {
+
   &,
   &:link,
   &:visited {
@@ -152,6 +174,7 @@
     box-shadow: 0 1.5rem 4rem rgba(color(shadow), 0.25);
     transition: all 0.3s ease-out;
   }
+
   &:hover {
     background-color: color(sfc);
     color: color(pfc);
@@ -159,6 +182,7 @@
     transform: translateY(-0.3rem);
     transition: all 0.3s;
   }
+
   &:active,
   &:focus {
     outline: none;

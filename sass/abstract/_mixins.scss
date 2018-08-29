@@ -33,31 +33,37 @@ $breakpoint:
 -tab-land
 -big-desktop
 */
-
 // 1em = 16px 
 @mixin respond($breakpoint) {
     @if $breakpoint==phone {
-        @media (max-width: 37.5em) {
+        @media only screen and (max-width: 37.5em) {
             @content
         }
+
         ; //600px
     }
+
     @if $breakpoint==tab-port {
-        @media (max-width: 56.25em) {
+        @media only screen and (max-width: 56.25em) {
             @content
         }
+
         ; // 900px
     }
+
     @if $breakpoint==tab-land {
-        @media (max-width: 75em) {
+        @media only screen and (max-width: 75em) {
             @content
         }
+
         ; //1200px
     }
+
     @if $breakpoint==sm {
-        @media (max-width: 85.375em) {
+        @media only screen and (max-width: 85.375em) {
             @content
         }
+
         ; //1350px
     }
 }
@@ -67,66 +73,87 @@ $breakpoint:
         @media (max-width: 20em) {
             @content
         }
+
         ; //320px iphone5/SE
     }
+
     @if $breakpoint==portOne {
         @media (max-width: 23.4375em) {
             @content
         }
+
         ; //375px iphone6/7/8
     }
+
     @if $breakpoint==port2 {
         @media (max-width: 25.875em) {
             @content
         }
+
         ; //414px iphone6/7/8
     }
+
     @if $breakpoint==port3 {
         @media (max-width: 48em) {
             @content
         }
+
         ; //768px ipad
     }
+
     @if $breakpoint==lOne {
         @media (max-width: 35.5em) {
             @content
         }
+
         ; // 568px 
     }
+
     @if $breakpoint==lTwo {
         @media (max-width: 41.6875em) {
             @content
         }
+
         ; // 667px 
     }
+
     @if $breakpoint==land2 {
         @media (max-width: 46em) {
             @content
         }
+
         ; // 736px 
     }
+
     @if $breakpoint==land3 {
         @media (max-width: 50.75em) {
             @content
         }
+
         ; // 812px 
     }
+
     @if $breakpoint==land4 {
         @media (max-width: 64em) {
             @content
         }
+
         ; //1024px
     }
+
     @if $breakpoint==lSix {
         @media (max-width: 85.375em) {
             @content
         }
+
         ; //1366px
     }
+
     @if $breakpoint==sm {
         @media (max-width: 84.375em) {
             @content
         }
+
         ; //1350px
     }
 }
