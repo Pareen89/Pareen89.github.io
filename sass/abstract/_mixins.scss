@@ -66,6 +66,12 @@ $breakpoint:
 
         ; //1350px
     }
+
+    @if breakpoint == large {
+        @media only screen and (min-width: 105.9375em){
+            @content
+        }
+    }
 }
 
 @mixin popupResond($breakpoint) {

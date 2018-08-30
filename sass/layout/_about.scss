@@ -5,10 +5,12 @@
 
 .box_container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
     grid-gap: 5rem;
     margin-bottom: 10rem;
+
+    
 
     @include respond(sm) {
         grid-template-columns: repeat(2, 1fr);
@@ -16,6 +18,10 @@
 
     @include respond(phone) {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include respond(large){
+        grid-template-columns: repeat(4,1fr);
     }
 }
 
@@ -30,18 +36,20 @@
     justify-self: stretch;
     align-self: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-    grid-auto-rows: minmax(10rem, auto);
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(3,1fr);
     transition: all 0.3s;
     object-fit: cover;
+    height: 40rem;
+    width: 100%;
 
     @include respond(tab-port) {
         justify-self: center;
-        width: 100%;
+        
     }
 
     @include respond(phone) {
-        width: 60%;
+        width: 55%;
     }
 
     &__icon {
